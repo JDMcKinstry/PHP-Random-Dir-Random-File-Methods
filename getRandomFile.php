@@ -1,4 +1,4 @@
-<?php
+<?php 
 	/**	getRandomFile()
 	 *	EZ solution for getting a random file.
 	 *	@author JD McKinstry <jdmckinstry@gmail.com>
