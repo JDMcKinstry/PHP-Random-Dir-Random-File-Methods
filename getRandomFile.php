@@ -1,4 +1,4 @@
-<?php 
+<?php
 	/**	getRandomFile()
 	 *	EZ solution for getting a random file.
 	 *	@author JD McKinstry <jdmckinstry@gmail.com>
@@ -9,7 +9,7 @@
 	 *
 	 *	@return STRING Can return String of filename, or full path + filename, or file contents. Default NULL
 	 *	*/
-	private function getRandomFile($path, $type=NULL, $contents=TRUE) {
+	function getRandomFile($path, $type=NULL, $contents=TRUE) {
 		if (strpos($path, $_SERVER['DOCUMENT_ROOT']) === FALSE) $path = $_SERVER['DOCUMENT_ROOT'] . '/' . $path;
 		if (is_dir($path)) {
 			if ($dh = opendir($path)) {
