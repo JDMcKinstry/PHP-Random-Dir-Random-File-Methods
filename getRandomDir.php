@@ -16,7 +16,7 @@
 				$arr = [];
 				while (false !== ($dir = readdir($dh))) {
 					if (is_dir("$path/$dir") && !preg_match('/^\.{1,2}$/', $dir)) {
-						if(is_null($indexOf)) $arr[] = $file;
+						if(is_null($indexOf)) $arr[] = $dir;
 						if (is_string($indexOf) && strpos($dir, $indexOf) !== FALSE) $arr[] = $dir;
 						elseif (is_array($indexOf)) {
 							$indexOf = implode('|', $indexOf);
